@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.env
+.env
+.venv/
+venv/
+*.sqlite3
+recommendations_history.json
+
+# VSCode or IDEs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+
+# Database
+recommendations.db
