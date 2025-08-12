@@ -137,9 +137,8 @@ class RecommendationService:
 
         return [
             p for p in all_products
-            if (p.category == "face_cream" and
-                skin_analysis.skin_type in p.suitable_skin_types and
-                any(c in p.targets_concerns for c in skin_analysis.concerns))
+            if ( skin_analysis.suitable_skin_types in p.suitable_skin_types and
+                any(c in p.targets_concerns for c in skin_analysis.targets_concerns))
         ]
 
     async def _get_llm_recommendations(

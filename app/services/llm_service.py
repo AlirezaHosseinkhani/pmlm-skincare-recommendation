@@ -6,6 +6,7 @@ import httpx
 from openai import OpenAI
 from app.config import settings
 import logging
+from app.utils.prompts import get_skin_analysis_prompt
 
 logger = logging.getLogger(__name__)
 
@@ -150,7 +151,6 @@ class LLMService:
 
     async def analyze_skin(self, image_data: Optional[bytes] = None, image_url: Optional[str] = None) -> Dict[str, Any]:
         """Analyze skin from image using primary provider with fallback"""
-        from app.utils.prompts import get_skin_analysis_prompt
         prompt = get_skin_analysis_prompt()
 
         logger.info(f"Starting skin analysis with provider: {self.primary_provider}")
@@ -198,7 +198,7 @@ class LLMService:
         # For recommendations, we can use a text-only model
         try:
             if "openai" in self.providers:
-                client = OpenAI(api_key=settings.openai_api_key)
+                client = OpenAI(base_url="https://api.avalapis.ir/v1",api_key=settings.openai_api_key)
                 response = client.chat.completions.create(
                     model="gpt-4o-mini",
                     messages=[{"role": "user", "content": prompt}],

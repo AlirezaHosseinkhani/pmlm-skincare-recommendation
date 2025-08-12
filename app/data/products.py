@@ -9,371 +9,371 @@ class ProductDatabase:
                 id="prod_001",
                 name="کرم مرطوب کننده و نرم کننده حاوی روغن های گیاهی",
                 description="کرم مرطوب کننده و نرم کننده با ترکیبات گیاهی برای پوست های نرمال و خشک",
-                category="face_cream",
+                # category="face_cream",
                 price=1250000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.DRY],
                 targets_concerns=[SkinConcern.MOISTURIZATION, SkinConcern.ECZEMA, SkinConcern.SENSITIVITY],
                 key_ingredients=["روغن گل بنفشه", "روغن بادام شیرین", "روغن جوجوبا", "روغن زیتون", "عصاره آلوئه‌ورا", "موم زنبور عسل", "ویتامین A", "ویتامین E", "ویتامین C"],
                 benefits=["مرطوب‌کننده", "نرم‌کننده", "آنتی‌اکسیدان قوی", "بهبود اگزما و حساسیت‌های پوستی"],
                 volume="50 میلی‌لیتر",
-                container_type="تیوپ",
-                container_material="پلاستیک"
+                # container_type="تیوپ",
+                # container_material="پلاستیک"
             ),
             Product(
                 id="prod_002",
                 name="کرم ضد چروک و جوان کننده شب",
                 description="کرم شب با ترکیبات ضد پیری برای کاهش چین و چروک",
-                category="face_cream",
+                # category="face_cream",
                 price=1850000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.DRY, SkinType.SENSITIVE],
                 targets_concerns=[SkinConcern.WRINKLES, SkinConcern.ANTI_AGING, SkinConcern.DARK_SPOTS],
                 key_ingredients=["کلاژن", "الاستین", "هیالورونیک اسید", "ویتامین E", "عصاره انار"],
                 benefits=["کاهش چین و چروک", "افزایش الاستیسیته پوست", "روشن کننده پوست"],
                 volume="30 میلی‌لیتر",
-                container_type="شیشه ای",
-                container_material="شیشه"
+                # container_type="شیشه ای",
+                # container_material="شیشه"
             ),
             Product(
                 id="prod_003",
                 name="کرم روشن کننده و یکدست کننده پوست",
                 description="کرم روشن کننده پوست با ترکیبات گیاهی برای کاهش لک های پوستی",
-                category="face_cream",
+                # category="face_cream",
                 price=1500000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.DRY, SkinType.COMBINATION],
                 targets_concerns=[SkinConcern.DARK_SPOTS, SkinConcern.DULLNESS, SkinConcern.ANTI_OXIDANT],
                 key_ingredients=["عصاره شیرین بیان", "ویتامین C", "عصاره گوجه فرنگی", "عصاره چای سبز"],
                 benefits=["روشن کننده پوست", "کاهش لک های پوستی", "آنتی اکسیدان قوی"],
                 volume="40 میلی‌لیتر",
-                container_type="جعبه",
-                container_material="پلاستیک"
+                # container_type="جعبه",
+                # container_material="پلاستیک"
             ),
             Product(
                 id="prod_004",
                 name="کرم آبرسان قوی پوست های خشک",
                 description="کرم آبرسان با ترکیبات قوی برای پوست های بسیار خشک",
-                category="face_cream",
+                # category="face_cream",
                 price=1350000,
                 suitable_skin_types=[SkinType.DRY, SkinType.SENSITIVE],
                 targets_concerns=[SkinConcern.DEHYDRATION, SkinConcern.ECZEMA, SkinConcern.SENSITIVITY],
                 key_ingredients=["اوره", "گلیسیرین", "عصاره بابونه", "روغن آرگان"],
                 benefits=["آبرسانی عمقی", "کاهش خارش و سوزش", "تسکین پوست های حساس"],
                 volume="75 میلی‌لیتر",
-                container_type="تیوپ",
-                container_material="پلاستیک"
+                # container_type="تیوپ",
+                # container_material="پلاستیک"
             ),
             Product(
                 id="prod_005",
                 name="کرم دور چشم ضد چروک",
                 description="کرم تخصصی دور چشم با ترکیبات ضد پیری و کاهش دهنده سیاهی",
-                category="eye_cream",
+                # category="eye_cream",
                 price=2200000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.DRY, SkinType.SENSITIVE],
                 targets_concerns=[SkinConcern.WRINKLES, SkinConcern.DARK_SPOTS, SkinConcern.ANTI_AGING],
                 key_ingredients=["کافئین", "پپتیدها", "روغن بادام", "ویتامین K"],
                 benefits=["کاهش چروکهای ریز دور چشم", "کاهش پف و سیاهی", "آبرسانی عمقی"],
                 volume="15 میلی‌لیتر",
-                container_type="تیوپ",
-                container_material="پلاستیک"
+                # container_type="تیوپ",
+                # container_material="پلاستیک"
             ),
             Product(
                 id="prod_006",
                 name="ژل شستشوی صورت پوست چرب",
                 description="ژل پاک کننده ملایم برای پوستهای چرب و مستعد آکنه",
-                category="face_wash",
+                # category="face_wash",
                 price=850000,
                 suitable_skin_types=[SkinType.OILY, SkinType.COMBINATION],
                 targets_concerns=[SkinConcern.ACNE, SkinConcern.LARGE_PORES, SkinConcern.REDNESS],
                 key_ingredients=["سالیسیلیک اسید", "عصاره چای سبز", "روغن درخت چای", "زینک"],
                 benefits=["پاکسازی عمقی منافذ", "کنترل ترشح چربی", "پیشگیری از جوش"],
                 volume="200 میلی‌لیتر",
-                container_type="بطری",
-                container_material="پلاستیک"
+                # container_type="بطری",
+                # container_material="پلاستیک"
             ),
             Product(
                 id="prod_007",
                 name="ماسک خاک رس تصفیه کننده",
                 description="ماسک صورت با خاک رس برای پوستهای چرب و مختلط",
-                category="face_mask",
+                # category="face_mask",
                 price=950000,
                 suitable_skin_types=[SkinType.OILY, SkinType.COMBINATION],
                 targets_concerns=[SkinConcern.ACNE, SkinConcern.LARGE_PORES, SkinConcern.DULLNESS],
                 key_ingredients=["خاک رس فرانسوی", "زغال فعال", "عصاره نعناع", "منتول"],
                 benefits=["جذب چربی اضافه", "تنظیم ترشح سبوم", "درخشان کردن پوست"],
                 volume="100 گرم",
-                container_type="توب",
-                container_material="پلاستیک"
+                # container_type="توب",
+                # container_material="پلاستیک"
             ),
             Product(
                 id="prod_008",
                 name="کرم دست ترمیم کننده",
                 description="کرم تخصصی دست با ترکیبات ترمیم کننده و ضد ترک",
-                category="hand_cream",
+                # category="hand_cream",
                 price=650000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.DRY, SkinType.SENSITIVE],
                 targets_concerns=[SkinConcern.DEHYDRATION, SkinConcern.ECZEMA, SkinConcern.MOISTURIZATION],
                 key_ingredients=["شیا باتر", "گلیسیرین", "عصاره آلوئه ورا", "پانتنول"],
                 benefits=["ترمیم ترکهای دست", "آبرسانی فوری", "حفاظت در برابر عوامل خارجی"],
                 volume="75 میلی‌لیتر",
-                container_type="تیوپ",
-                container_material="پلاستیک"
+                # container_type="تیوپ",
+                # container_material="پلاستیک"
             ),
             Product(
                 id="prod_009",
                 name="سرم ویتامین C",
                 description="سرم روشن کننده با ویتامین C خالص برای تمام پوستها",
-                category="face_serum",
+                # category="face_serum",
                 price=2800000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.DRY, SkinType.OILY, SkinType.COMBINATION],
                 targets_concerns=[SkinConcern.DARK_SPOTS, SkinConcern.DULLNESS, SkinConcern.ANTI_OXIDANT],
                 key_ingredients=["ویتامین C 20%", "فرولیک اسید", "ویتامین E", "عصاره گلیسیرین"],
                 benefits=["روشن کردن پوست", "کاهش لکهای تیره", "حفاظت در برابر رادیکالهای آزاد"],
                 volume="30 میلی‌لیتر",
-                container_type="قطره چکان",
-                container_material="شیشه"
+                # container_type="قطره چکان",
+                # container_material="شیشه"
             ),
             Product(
                 id="prod_010",
                 name="کرم ضد آفتاب SPF50",
                 description="کرم ضد آفتاب با طیف گسترده برای محافظت روزانه",
-                category="sunscreen",
+                # category="sunscreen",
                 price=1800000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.DRY, SkinType.OILY, SkinType.COMBINATION],
                 targets_concerns=[SkinConcern.ANTI_AGING, SkinConcern.DARK_SPOTS, SkinConcern.REDNESS],
                 key_ingredients=["زینک اکساید", "تیتانیوم دی اکساید", "عصاره آلوئه ورا", "ویتامین E"],
                 benefits=["محافظت در برابر UVA/UVB", "پیشگیری از پیری زودرس", "مرطوب کنندگی"],
                 volume="50 میلی‌لیتر",
-                container_type="تیوپ",
-                container_material="پلاستیک"
+                # container_type="تیوپ",
+                # container_material="پلاستیک"
             ),
             Product(
                 id="prod_011",
                 name="لوسیون بدن آبرسان",
                 description="لوسیون سبک با جذب سریع برای تمام بدن",
-                category="body_lotion",
+                # category="body_lotion",
                 price=1200000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.DRY, SkinType.SENSITIVE],
                 targets_concerns=[SkinConcern.DEHYDRATION, SkinConcern.MOISTURIZATION, SkinConcern.ECZEMA],
                 key_ingredients=["اوره 10%", "گلیسیرین", "روغن جوجوبا", "عصاره بابونه"],
                 benefits=["آبرسانی 24 ساعته", "کاهش خشکی و خارش", "بافت سبک و غیرچرب"],
                 volume="250 میلی‌لیتر",
-                container_type="پمپی",
-                container_material="پلاستیک"
+                # container_type="پمپی",
+                # container_material="پلاستیک"
             ),
             Product(
                 id="prod_012",
                 name="کرم پودر مات",
                 description="کرم پودر پوشاننده با finish مات برای پوست چرب",
-                category="bb_cream",
+                # category="bb_cream",
                 price=1600000,
                 suitable_skin_types=[SkinType.OILY, SkinType.COMBINATION],
                 targets_concerns=[SkinConcern.ACNE, SkinConcern.LARGE_PORES, SkinConcern.REDNESS],
                 key_ingredients=["سیلیکا", "زینک", "عصاره چای سبز", "ویتامین E"],
                 benefits=["پوشش دهی متوسط", "کنترل چربی", "عدم ایجاد جوش"],
                 volume="30 میلی‌لیتر",
-                container_type="جعبه",
-                container_material="پلاستیک"
+                # container_type="جعبه",
+                # container_material="پلاستیک"
             ),
             Product(
                 id="prod_013",
                 name="اسکراب صورت ملایم",
                 description="اسکراب لایه بردار با ذرات ریز برای پوستهای حساس",
-                category="face_scrub",
+                # category="face_scrub",
                 price=900000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.DRY, SkinType.SENSITIVE],
                 targets_concerns=[SkinConcern.DULLNESS, SkinConcern.DEHYDRATION, SkinConcern.MOISTURIZATION],
                 key_ingredients=["ذرات جوجوبا", "عصاره آلوئه ورا", "روغن بادام", "گلیسیرین"],
                 benefits=["لایه برداری ملایم", "آبرسانی همزمان", "عدم ایجاد سایش"],
                 volume="100 میلی‌لیتر",
-                container_type="بطری",
-                container_material="پلاستیک"
+                # container_type="بطری",
+                # container_material="پلاستیک"
             ),
             Product(
                 id="prod_014",
                 name="روغن صورت چندمنظوره",
                 description="روغن گیاهی برای صورت، بدن و مو",
-                category="face_oil",
+                # category="face_oil",
                 price=1950000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.DRY],
                 targets_concerns=[SkinConcern.DEHYDRATION, SkinConcern.ANTI_AGING, SkinConcern.ANTI_OXIDANT],
                 key_ingredients=["روغن آرگان", "روغن گل رز", "روغن جوجوبا", "ویتامین E"],
                 benefits=["آبرسانی عمقی", "کاهش چین و چروک", "درخشان کردن پوست"],
                 volume="30 میلی‌لیتر",
-                container_type="قطره چکان",
-                container_material="شیشه"
+                # container_type="قطره چکان",
+                # container_material="شیشه"
             ),
             Product(
                 id="prod_015",
                 name="کرم شب بازسازی کننده",
                 description="کرم شب با ترکیبات ترمیم کننده برای بازسازی پوست هنگام خواب",
-                category="night_cream",
+                # category="night_cream",
                 price=2100000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.DRY, SkinType.COMBINATION],
                 targets_concerns=[SkinConcern.WRINKLES, SkinConcern.ANTI_AGING, SkinConcern.DULLNESS],
                 key_ingredients=["پپتیدها", "نیاسینامید", "روغن آرگان", "عصاره رزماری"],
                 benefits=["بازسازی سلولی", "کاهش خطوط ریز", "آبرسانی عمقی"],
                 volume="50 میلی‌لیتر",
-                container_type="شیشه",
-                container_material="شیشه تیره"
+                # container_type="شیشه",
+                # container_material="شیشه تیره"
             ),
             Product(
                 id="prod_016",
                 name="تونر متعادل کننده pH",
                 description="تونر بدون الکل برای متعادل کردن سطح pH پوست",
-                category="toner",
+                # category="toner",
                 price=950000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.OILY, SkinType.COMBINATION, SkinType.SENSITIVE],
                 targets_concerns=[SkinConcern.REDNESS, SkinConcern.LARGE_PORES, SkinConcern.ACNE],
                 key_ingredients=["عصاره گل همیشه بهار", "آلوئه ورا", "گلیسیرین گیاهی", "پانتنول"],
                 benefits=["آرامش بخشی", "تنظیم ترشح چربی", "آماده سازی پوست برای مراحل بعدی"],
                 volume="200 میلی‌لیتر",
-                container_type="اسپری",
-                container_material="پلاستیک"
+                # container_type="اسپری",
+                # container_material="پلاستیک"
             ),
             Product(
                 id="prod_017",
                 name="ماسک آبرسان هیدرا",
                 description="ماسک ژله ای با 50% هیالورونیک اسید برای آبرسانی فوری",
-                category="sheet_mask",
+                # category="sheet_mask",
                 price=1200000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.DRY, SkinType.SENSITIVE],
                 targets_concerns=[SkinConcern.DEHYDRATION, SkinConcern.DULLNESS, SkinConcern.REDNESS],
                 key_ingredients=["هیالورونیک اسید", "عصاره خیار", "گلیسیرین", "آلوئه ورا"],
                 benefits=["آبرسانی عمقی", "کاهش قرمزی", "خنک کنندگی فوری"],
                 volume="1 عدد ماسک",
-                container_type="بسته بندی",
-                container_material="فویل"
+                # container_type="بسته بندی",
+                # container_material="فویل"
             ),
             Product(
                 id="prod_018",
                 name="کرم دور چشم کافئینه",
                 description="کرم تخصصی دور چشم با کافئین برای کاهش پف و سیاهی",
-                category="eye_cream",
+                # category="eye_cream",
                 price=1750000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.OILY, SkinType.COMBINATION, SkinType.SENSITIVE],
                 targets_concerns=[SkinConcern.DARK_SPOTS, SkinConcern.REDNESS, SkinConcern.ANTI_OXIDANT],
                 key_ingredients=["کافئین 5%", "عصاره بلوبری", "ویتامین K", "پپتیدها"],
                 benefits=["کاهش پف صبحگاهی", "روشن کردن ناحیه دور چشم", "کاهش سیاهی"],
                 volume="15 میلی‌لیتر",
-                container_type="تیوپ",
-                container_material="پلاستیک"
+                # container_type="تیوپ",
+                # container_material="پلاستیک"
             ),
             Product(
                 id="prod_019",
                 name="روغن پاک کننده آرایش",
                 description="روغن چند مرحله ای برای پاک کردن تمام انواع آرایش",
-                category="cleanser",
+                # category="cleanser",
                 price=1350000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.DRY, SkinType.COMBINATION, SkinType.SENSITIVE],
                 targets_concerns=[SkinConcern.MOISTURIZATION, SkinConcern.DEHYDRATION, SkinConcern.SENSITIVITY],
                 key_ingredients=["روغن جوجوبا", "روغن دانه انگور", "عصاره بابونه", "ویتامین E"],
                 benefits=["پاکسازی عمقی بدون خشکی", "حفظ رطوبت پوست", "مناسب برای چشم"],
                 volume="150 میلی‌لیتر",
-                container_type="پمپی",
-                container_material="پلاستیک"
+                # container_type="پمپی",
+                # container_material="پلاستیک"
             ),
             Product(
                 id="prod_020",
                 name="کرم روز محافظ SPF30",
                 description="کرم روزانه با محافظت متوسط ضد آفتاب",
-                category="day_cream",
+                # category="day_cream",
                 price=1650000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.DRY, SkinType.COMBINATION],
                 targets_concerns=[SkinConcern.ANTI_AGING, SkinConcern.DARK_SPOTS, SkinConcern.DEHYDRATION],
                 key_ingredients=["اکسید زینک", "عصاره چای سبز", "روغن بادام", "ویتامین E"],
                 benefits=["محافظت روزانه", "مرطوب کنندگی پایدار", "پیشگیری از پیری"],
                 volume="40 میلی‌لیتر",
-                container_type="تیوپ",
-                container_material="پلاستیک"
+                # container_type="تیوپ",
+                # container_material="پلاستیک"
             ),
             Product(
                 id="prod_021",
                 name="سرم روشن کننده نیاسینامید",
                 description="سرم قوی با 10% نیاسینامید برای یکدست کردن رنگ پوست",
-                category="face_serum",
+                # category="face_serum",
                 price=2500000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.OILY, SkinType.COMBINATION, SkinType.SENSITIVE],
                 targets_concerns=[SkinConcern.DARK_SPOTS, SkinConcern.REDNESS, SkinConcern.LARGE_PORES],
                 key_ingredients=["نیاسینامید 10%", "عصاره شیرین بیان", "زینک", "آلوئه ورا"],
                 benefits=["کاهش لک های پوستی", "تنظیم تولید چربی", "کاهش التهاب"],
                 volume="30 میلی‌لیتر",
-                container_type="قطره چکان",
-                container_material="شیشه"
+                # container_type="قطره چکان",
+                # container_material="شیشه"
             ),
             Product(
                 id="prod_022",
                 name="لایه بردار شیمیایی AHA/BHA",
                 description="محلول لایه برداری ملایم با اسیدهای میوه",
-                category="chemical_exfoliant",
+                # category="chemical_exfoliant",
                 price=1850000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.OILY, SkinType.COMBINATION],
                 targets_concerns=[SkinConcern.ACNE, SkinConcern.DULLNESS, SkinConcern.DARK_SPOTS],
                 key_ingredients=["اسید گلیکولیک 5%", "اسید سالیسیلیک 2%", "عصاقه آلوئه ورا", "پانتنول"],
                 benefits=["لایه برداری بدون سایش", "کاهش جوش های سرسیاه", "روشن کردن پوست"],
                 volume="100 میلی‌لیتر",
-                container_type="بطری",
-                container_material="پلاستیک"
+                # container_type="بطری",
+                # container_material="پلاستیک"
             ),
             Product(
                 id="prod_023",
                 name="کرم سفت کننده گردن و دکلته",
                 description="کرم تخصصی برای نواحی گردن و سینه با ترکیبات لیفتینگ",
-                category="neck_cream",
+                # category="neck_cream",
                 price=2250000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.DRY],
                 targets_concerns=[SkinConcern.WRINKLES, SkinConcern.ANTI_AGING, SkinConcern.DULLNESS],
                 key_ingredients=["ماتریکسیل", "کلاژن", "الاستین", "روغن رز موس"],
                 benefits=["کاهش چین و چروک گردن", "افزایش الاستیسیته", "آبرسانی عمقی"],
                 volume="50 میلی‌لیتر",
-                container_type="شیشه",
-                container_material="شیشه"
+                # container_type="شیشه",
+                # container_material="شیشه"
             ),
             Product(
                 id="prod_024",
                 name="محلول ضد جوش نقطه ای",
                 description="محلول متمرکز برای درمان جوش های التهابی",
-                category="acne_treatment",
+                # category="acne_treatment",
                 price=1100000,
                 suitable_skin_types=[SkinType.OILY, SkinType.COMBINATION],
                 targets_concerns=[SkinConcern.ACNE, SkinConcern.REDNESS, SkinConcern.SENSITIVITY],
                 key_ingredients=["سالیسیلیک اسید 2%", "نیاسینامید", "عصاره چای سبز", "زینک"],
                 benefits=["کاهش سریع التهاب جوش", "پیشگیری از جای جوش", "تنظیم تولید چربی"],
                 volume="15 میلی‌لیتر",
-                container_type="برس",
-                container_material="پلاستیک"
+                # container_type="برس",
+                # container_material="پلاستیک"
             ),
             Product(
                 id="prod_025",
                 name="کرم پوشاننده ضد لک",
                 description="کرم درمانی پوشاننده برای لک های صورت",
-                category="color_corrector",
+                # category="color_corrector",
                 price=1450000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.DRY, SkinType.COMBINATION],
                 targets_concerns=[SkinConcern.DARK_SPOTS, SkinConcern.REDNESS, SkinConcern.ANTI_AGING],
                 key_ingredients=["عصاقه شیرین بیان", "ویتامین C", "آربوتین", "روغن جوجوبا"],
                 benefits=["پوشش دهی لک ها", "درمان همزمان لک ها", "مرطوب کنندگی"],
                 volume="20 میلی‌لیتر",
-                container_type="پالت",
-                container_material="پلاستیک"
+                # container_type="پالت",
+                # container_material="پلاستیک"
             ),
             Product(
                 id="prod_026",
                 name="بالم لب ترمیم کننده",
                 description="بالم لب با ترکیبات ترمیم کننده برای لب های خشک و ترک خورده",
-                category="lip_balm",
+                # category="lip_balm",
                 price=550000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.DRY, SkinType.SENSITIVE],
                 targets_concerns=[SkinConcern.DEHYDRATION, SkinConcern.SENSITIVITY],
                 key_ingredients=["موم زنبور عسل", "شیا باتر", "روغن نارگیل", "ویتامین E"],
                 benefits=["ترمیم فوری ترک ها", "حفاظت در برابر سرما", "آبرسانی پایدار"],
                 volume="10 گرم",
-                container_type="قوطی",
-                container_material="فلز"
+                # container_type="قوطی",
+                # container_material="فلز"
             ),
             Product(
                 id="prod_027",
                 name="اسپری تونیک طراوت بخش",
                 description="اسپری صورت برای طراوت بخشی فوری در طول روز",
-                category="facial_mist",
+                # category="facial_mist",
                 price=750000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.DRY, SkinType.OILY, SkinType.COMBINATION,
                                      SkinType.SENSITIVE],
@@ -381,50 +381,50 @@ class ProductDatabase:
                 key_ingredients=["آب گل رز", "عصاقه خیار", "گلیسیرین", "پانتنول"],
                 benefits=["آبرسانی فوری", "تنظیم pH پوست", "خنک کنندگی"],
                 volume="100 میلی‌لیتر",
-                container_type="اسپری",
-                container_material="شیشه"
+                # container_type="اسپری",
+                # container_material="شیشه"
             ),
             Product(
                 id="prod_028",
                 name="کرم ضد تعریق صورت",
                 description="کرم تخصصی برای کنترل تعریق صورت در آب و هوای مرطوب",
-                category="face_cream",
+                # category="face_cream",
                 price=1550000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.OILY, SkinType.COMBINATION],
                 targets_concerns=[SkinConcern.ACNE, SkinConcern.LARGE_PORES, SkinConcern.REDNESS],
                 key_ingredients=["پلیمرهای جاذب رطوبت", "عصاره نعناع", "زینک", "عصاره بلوط"],
                 benefits=["کنترل تعریق", "جذب چربی اضافه", "حفظ آرایش"],
                 volume="30 میلی‌لیتر",
-                container_type="تیوپ",
-                container_material="پلاستیک"
+                # container_type="تیوپ",
+                # container_material="پلاستیک"
             ),
             Product(
                 id="prod_029",
                 name="ماسک ذغال پاکسازی عمقی",
                 description="ماسک پاکسازی با زغال فعال برای جذب ناخالصی ها",
-                category="face_mask",
+                # category="face_mask",
                 price=1250000,
                 suitable_skin_types=[SkinType.OILY, SkinType.COMBINATION],
                 targets_concerns=[SkinConcern.ACNE, SkinConcern.LARGE_PORES, SkinConcern.DULLNESS],
                 key_ingredients=["زغال فعال", "خاک رس بنتونیت", "عصاره چای سبز", "منتول"],
                 benefits=["پاکسازی منافذ", "کاهش جوش های سرسیاه", "درخشان کردن پوست"],
                 volume="75 میلی‌لیتر",
-                container_type="توب",
-                container_material="پلاستیک"
+                # container_type="توب",
+                # container_material="پلاستیک"
             ),
             Product(
                 id="prod_030",
                 name="مرطوب کننده قوی پوست خشک",
                 description="کرم غنی شده برای پوست های بسیار خشک و کم آب",
-                category="face_cream",
+                # category="face_cream",
                 price=1450000,
                 suitable_skin_types=[SkinType.DRY, SkinType.SENSITIVE],
                 targets_concerns=[SkinConcern.DEHYDRATION, SkinConcern.ECZEMA, SkinConcern.SENSITIVITY],
                 key_ingredients=["اوره 5%", "سرامیدها", "شیا باتر", "روغن آرگان"],
                 benefits=["آبرسانی 72 ساعته", "ترمیم سد پوستی", "کاهش خارش"],
                 volume="75 میلی‌لیتر",
-                container_type="شیشه",
-                container_material="شیشه"
+                # container_type="شیشه",
+                # container_material="شیشه"
             ),
 
             # 17. ژل ضد جوش شبانه
@@ -432,15 +432,15 @@ class ProductDatabase:
                 id="prod_031",
                 name="ژل ضد جوش شبانه",
                 description="درمان موضعی برای جوش های التهابی",
-                category="acne_treatment",
+                # category="acne_treatment",
                 price=1250000,
                 suitable_skin_types=[SkinType.OILY, SkinType.COMBINATION],
                 targets_concerns=[SkinConcern.ACNE, SkinConcern.REDNESS, SkinConcern.LARGE_PORES],
                 key_ingredients=["بنزوئیل پراکسید 2.5%", "عصاره چای درخت", "آلوئه ورا", "نیاسینامید"],
                 benefits=["کاهش التهاب جوش", "پیشگیری از جوش جدید", "کاهش جای جوش"],
                 volume="30 میلی‌لیتر",
-                container_type="تیوپ",
-                container_material="پلاستیک"
+                # container_type="تیوپ",
+                # container_material="پلاستیک"
             ),
 
             # 18. روغن ماساژ صورت
@@ -448,15 +448,15 @@ class ProductDatabase:
                 id="prod_032",
                 name="روغن ماساژ صورت",
                 description="روغن چندمنظوره برای ماساژ و پاکسازی",
-                category="face_oil",
+                # category="face_oil",
                 price=1650000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.DRY, SkinType.COMBINATION],
                 targets_concerns=[SkinConcern.ANTI_AGING, SkinConcern.DEHYDRATION, SkinConcern.DULLNESS],
                 key_ingredients=["روغن گل رز", "روغن جوجوبا", "ویتامین E", "عصاره بابونه"],
                 benefits=["آبرسانی عمقی", "کاهش تنش عضلات صورت", "درخشان کردن پوست"],
                 volume="100 میلی‌لیتر",
-                container_type="قطره چکان",
-                container_material="شیشه کهربایی"
+                # container_type="قطره چکان",
+                # container_material="شیشه کهربایی"
             ),
 
             # 19. کرم روشن کننده شب
@@ -464,15 +464,15 @@ class ProductDatabase:
                 id="prod_033",
                 name="کرم روشن کننده شب",
                 description="کرم تخصصی شب برای کاهش لک های پوستی",
-                category="night_cream",
+                # category="night_cream",
                 price=1950000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.DRY, SkinType.COMBINATION],
                 targets_concerns=[SkinConcern.DARK_SPOTS, SkinConcern.ANTI_AGING, SkinConcern.DULLNESS],
                 key_ingredients=["آربوتین", "عصاره شیرین بیان", "نیاسینامید", "ویتامین E"],
                 benefits=["کاهش تولید ملانین", "یکدست کردن رنگ پوست", "آبرسانی همزمان"],
                 volume="50 میلی‌لیتر",
-                container_type="تیوپ",
-                container_material="پلاستیک"
+                # container_type="تیوپ",
+                # container_material="پلاستیک"
             ),
 
             # 20. شامپو صورت مردانه
@@ -480,15 +480,15 @@ class ProductDatabase:
                 id="prod_034",
                 name="شامپو صورت مردانه",
                 description="پاک کننده تخصصی برای پوست ریش و صورت آقایان",
-                category="face_wash",
+                # category="face_wash",
                 price=950000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.OILY, SkinType.COMBINATION],
                 targets_concerns=[SkinConcern.ACNE, SkinConcern.LARGE_PORES, SkinConcern.REDNESS],
                 key_ingredients=["سالیسیلیک اسید", "منتول", "عصاره اکالیپتوس", "زینک"],
                 benefits=["پاکسازی عمقی فولیکول ها", "پیشگیری از جوش ریش", "احساس خنکی"],
                 volume="150 میلی‌لیتر",
-                container_type="پمپی",
-                container_material="پلاستیک"
+                # container_type="پمپی",
+                # container_material="پلاستیک"
             ),
 
             # 21. ماسک طلایی ضد پیری
@@ -496,15 +496,15 @@ class ProductDatabase:
                 id="prod_035",
                 name="ماسک طلایی ضد پیری",
                 description="ماسک صورت با ذرات طلا برای پوست های بالغ",
-                category="face_mask",
+                # category="face_mask",
                 price=3200000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.DRY],
                 targets_concerns=[SkinConcern.ANTI_AGING, SkinConcern.WRINKLES, SkinConcern.DULLNESS],
                 key_ingredients=["ذرات طلا 24 عیار", "کلاژن دریایی", "عصاره خاویار", "هیالورونیک اسید"],
                 benefits=["لیفتینگ فوری", "کاهش عمق چروک", "درخشان کردن پوست"],
                 volume="50 میلی‌لیتر",
-                container_type="شیشه",
-                container_material="شیشه لوکس"
+                # container_type="شیشه",
+                # container_material="شیشه لوکس"
             ),
 
             # 22. کرم دور چشم سرد
@@ -512,15 +512,15 @@ class ProductDatabase:
                 id="prod_036",
                 name="کرم دور چشم سرد",
                 description="کرم غلتکی خنک کننده دور چشم",
-                category="eye_cream",
+                # category="eye_cream",
                 price=1850000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.DRY, SkinType.SENSITIVE],
                 targets_concerns=[SkinConcern.DARK_SPOTS, SkinConcern.REDNESS, SkinConcern.ANTI_OXIDANT],
                 key_ingredients=["کافئین", "عصاره بلوبری", "پپتیدها", "ویتامین K"],
                 benefits=["کاهش پف فوری", "ماساژ سرد", "روشن کردن حلقه سیاه"],
                 volume="15 میلی‌لیتر",
-                container_type="غلتکی",
-                container_material="فلز"
+                # container_type="غلتکی",
+                # container_material="فلز"
             ),
 
             # 23. تونر آبرسان گل رز
@@ -528,15 +528,15 @@ class ProductDatabase:
                 id="prod_037",
                 name="تونر آبرسان گل رز",
                 description="تونر بدون الکل با عطر گل رز طبیعی",
-                category="toner",
+                # category="toner",
                 price=1100000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.DRY, SkinType.SENSITIVE],
                 targets_concerns=[SkinConcern.DEHYDRATION, SkinConcern.REDNESS, SkinConcern.SENSITIVITY],
                 key_ingredients=["آب گل رز", "گلیسیرین", "آلوئه ورا", "پانتنول"],
                 benefits=["آبرسانی فوری", "تنظیم pH پوست", "آرامش بخشی"],
                 volume="200 میلی‌لیتر",
-                container_type="اسپری",
-                container_material="شیشه"
+                # container_type="اسپری",
+                # container_material="شیشه"
             ),
 
             # 24. کرم ضد لک SPF50+
@@ -544,15 +544,15 @@ class ProductDatabase:
                 id="prod_038",
                 name="کرم ضد لک SPF50+",
                 description="کرم ضد آفتاب با خاصیت ضد لک برای پوست های حساس",
-                category="sunscreen",
+                # category="sunscreen",
                 price=2450000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.DRY, SkinType.SENSITIVE],
                 targets_concerns=[SkinConcern.DARK_SPOTS, SkinConcern.ANTI_AGING, SkinConcern.REDNESS],
                 key_ingredients=["زینک اکساید", "عصاره شیرین بیان", "نیاسینامید", "ویتامین E"],
                 benefits=["پیشگیری از لک جدید", "محافظت در برابر نور آبی", "پوشش دهی سبک"],
                 volume="40 میلی‌لیتر",
-                container_type="تیوپ",
-                container_material="پلاستیک"
+                # container_type="تیوپ",
+                # container_material="پلاستیک"
             ),
 
             # 25. سرم رشد مژه
@@ -560,15 +560,15 @@ class ProductDatabase:
                 id="prod_039",
                 name="سرم رشد مژه",
                 description="سرم تقویتی برای رشد و تقویت مژه ها",
-                category="lash_serum",
+                # category="lash_serum",
                 price=2850000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.SENSITIVE],
                 targets_concerns=[SkinConcern.ANTI_AGING],
                 key_ingredients=["بیوتین", "پپتیدها", "عصاره جینسینگ", "پانتنول"],
                 benefits=["تقویت فولیکول", "رشد سریعتر مژه", "جلوگیری از ریزش"],
                 volume="3 میلی‌لیتر",
-                container_type="مژه ای",
-                container_material="پلاستیک"
+                # container_type="مژه ای",
+                # container_material="پلاستیک"
             ),
 
             # 26. کرم دست ضد لک
@@ -576,15 +576,15 @@ class ProductDatabase:
                 id="prod_040",
                 name="کرم دست ضد لک",
                 description="کرم تخصصی دست برای کاهش لک های پیری",
-                category="hand_cream",
+                # category="hand_cream",
                 price=1350000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.DRY],
                 targets_concerns=[SkinConcern.DARK_SPOTS, SkinConcern.ANTI_AGING, SkinConcern.DEHYDRATION],
                 key_ingredients=["آربوتین", "ویتامین C", "گلیسیرین", "روغن بادام"],
                 benefits=["کاهش لک های دست", "آبرسانی عمقی", "حفاظت در برابر عوامل محیطی"],
                 volume="75 میلی‌لیتر",
-                container_type="تیوپ",
-                container_material="پلاستیک"
+                # container_type="تیوپ",
+                # container_material="پلاستیک"
             ),
 
             # 27. ماسک ویتامین C
@@ -592,15 +592,15 @@ class ProductDatabase:
                 id="prod_041",
                 name="ماسک ویتامین C",
                 description="ماسک روشن کننده با ویتامین C پایدار",
-                category="sheet_mask",
+                # category="sheet_mask",
                 price=850000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.DRY, SkinType.COMBINATION],
                 targets_concerns=[SkinConcern.DARK_SPOTS, SkinConcern.DULLNESS, SkinConcern.ANTI_OXIDANT],
                 key_ingredients=["ویتامین C 10%", "عصاره پرتقال", "هیالورونیک اسید", "ویتامین E"],
                 benefits=["روشن کردن فوری", "کاهش لک های پوستی", "آبرسانی عمقی"],
                 volume="1 عدد ماسک",
-                container_type="بسته",
-                container_material="فویل"
+                # container_type="بسته",
+                # container_material="فویل"
             ),
 
             # 28. اسکراب بدن قهوه
@@ -608,15 +608,15 @@ class ProductDatabase:
                 id="prod_042",
                 name="اسکراب بدن قهوه",
                 description="اسکراب بدن با دانه های قهوه برای پوست های خشک",
-                category="body_scrub",
+                # category="body_scrub",
                 price=1250000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.DRY],
                 targets_concerns=[SkinConcern.DEHYDRATION, SkinConcern.DULLNESS],
                 key_ingredients=["دانه قهوه", "شکر قهوه ای", "روغن نارگیل", "ویتامین E"],
                 benefits=["لایه برداری ملایم", "کاهش سلول های مرده", "آبرسانی همزمان"],
                 volume="200 میلی‌لیتر",
-                container_type="بطری",
-                container_material="پلاستیک"
+                # container_type="بطری",
+                # container_material="پلاستیک"
             ),
 
             # 29. کرم پایه آرایشی
@@ -624,15 +624,15 @@ class ProductDatabase:
                 id="prod_043",
                 name="کرم پایه آرایشی",
                 description="کرم ترکیبی مراقبتی و آرایشی با پوشش متوسط",
-                category="tinted_moisturizer",
+                # category="tinted_moisturizer",
                 price=1750000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.DRY, SkinType.COMBINATION],
                 targets_concerns=[SkinConcern.DEHYDRATION, SkinConcern.REDNESS, SkinConcern.DULLNESS],
                 key_ingredients=["هیالورونیک اسید", "عصاره چای سبز", "دی‌اکسید تیتانیوم", "روغن جوجوبا"],
                 benefits=["پوشش دهی یکدست", "مرطوب کنندگی پایدار", "حفاظت SPF20"],
                 volume="30 میلی‌لیتر",
-                container_type="جعبه",
-                container_material="پلاستیک"
+                # container_type="جعبه",
+                # container_material="پلاستیک"
             ),
 
             # 30. ژل بعد از اصلاح
@@ -640,15 +640,15 @@ class ProductDatabase:
                 id="prod_044",
                 name="ژل بعد از اصلاح",
                 description="ژل تسکین دهنده پس از اصلاح برای آقایان",
-                category="after_shave",
+                # category="after_shave",
                 price=1150000,
                 suitable_skin_types=[SkinType.NORMAL, SkinType.SENSITIVE],
                 targets_concerns=[SkinConcern.REDNESS, SkinConcern.SENSITIVITY, SkinConcern.REDNESS],
                 key_ingredients=["آلوئه ورا", "عصاره بابونه", "منتول", "پانتنول"],
                 benefits=["کاهش سوزش", "جلوگیری از جوش", "خنک کنندگی فوری"],
                 volume="100 میلی‌لیتر",
-                container_type="بطری",
-                container_material="پلاستیک"
+                # container_type="بطری",
+                # container_material="پلاستیک"
             )
         ]
 

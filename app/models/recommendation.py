@@ -7,6 +7,7 @@ from .product import Product, SkinType, SkinConcern
 
 class AgeCategory(str, Enum):
     """Standardized age categories for skincare."""
+    CHILD = "0-12"
     TEEN = "13-19"
     YOUNG_ADULT = "20-35"
     MATURE = "36-50"
@@ -15,8 +16,8 @@ class AgeCategory(str, Enum):
 
 class SkinAnalysis(BaseModel):
     """Detailed analysis of user's skin characteristics."""
-    skin_type: SkinType = Field(..., description="Primary skin type classification")
-    concerns: List[SkinConcern] = Field(
+    suitable_skin_types: SkinType = Field(..., description="Primary skin type classification")
+    targets_concerns: List[SkinConcern] = Field(
         default_factory=list,
         description="Identified skin concerns",
         max_items=5
@@ -27,7 +28,7 @@ class SkinAnalysis(BaseModel):
         description="Additional observed characteristics"
     )
 
-    @validator('concerns')
+    @validator('targets_concerns')
     def validate_concerns(cls, v):
         if not v:
             raise ValueError("At least one concern must be identified")
@@ -36,7 +37,7 @@ class SkinAnalysis(BaseModel):
 
 class ProductMatch(BaseModel):
     """Detailed scoring breakdown for a product recommendation."""
-    skin_type: float = Field(..., ge=0, le=30, description="Skin type match score (0-30)")
+    suitable_skin_types: float = Field(..., ge=0, le=30, description="Skin type match score (0-30)")
     concerns: float = Field(..., ge=0, le=50, description="Concerns match score (0-50)")
     age: float = Field(..., ge=0, le=20, description="Age appropriateness score (0-20)")
 
